@@ -17,8 +17,8 @@ function initializePage() {
 	// example: $("#div-id").click(functionToCall);
 }
 
-function projectclick() {
-
+function projectclick(e) {
+	e.preventDefault();
 	var containingProject = $(this).closest(".project");
     containingProject.append("<div class='project-description'><p>Description of the project.</p></div>");
 
